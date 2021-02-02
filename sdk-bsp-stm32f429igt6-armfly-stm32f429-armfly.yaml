@@ -1,0 +1,114 @@
+
+board:
+  buy_url_cn: https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-18210351048.13.3ea6560fkZezwf&id=525036962312
+  buy_url_global: https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-18210351048.13.3ea6560fkZezwf&id=525036962312
+  debug_interface: SWD
+  debugger: ST-LINK
+  description_en: Armfly-V6 STM32F429 is a development board based on ARM Cortex-M4
+    kernel launched by Amfly-V6. The highest frequency is 180MHz. The development
+    board has rich onboard resources, which can give full play to the chip performance
+    of STM32F429.
+  description_zh: 'armfly-v6 STM32F429 是安富莱推出的一款基于 ARM Cortex-M4 内核的开发板，最高主频为 180Mhz，该开发板具有丰富的板载资源，可以充分发挥
+    STM32F429 的芯片性能。
+
+
+    '
+  emulator_machine: ''
+  large_image: documents/images/board.png
+  name: STM32F429-ARMFLY-V6
+  price_cn: 498 CNY
+  price_global: 76.84 USD
+  sale_contact_cn: https://armfly.taobao.com/
+  sale_contact_global: https://armfly.taobao.com/
+  small_image: documents/images/board_small.png
+  vendor: armfly
+  version: V6
+chip:
+  chip_name: STM32F429IGT6
+  clock_source: HSE
+  device_vendor: STMicroelectronics
+  family_name: STM32
+  rx_name: PA10
+  series_name: STM32F4
+  source_freq: '8000000'
+  sub_series_name: STM32F429
+  target_freq: '240000000'
+  tx_name: PA9
+  uart_name: UART1
+docs:
+- category: manual
+  file: documents/安富莱_STM32-V6开发板_用户手册，含BSP驱动包设计（V1.9）.pdf
+  title: 安富莱_STM32-V6开发板_用户手册，含BSP驱动包设计
+example_projects: []
+features:
+- 'MCU: STM32F429IGT6, main frequency 180MHz, 2048KB Flash, 256KB RAM'
+- 'External RAM: MT48LC4M32B2 (SDRAM, 16MB, 32bit)'
+- 'External Flash: W25Q64BVSSIG (SPI, 8MB), HY27UF081G2A (NAND, 128MB)'
+- 'LED: 4 PCS, extended IO LED1-LED4'
+features_zh:
+- MCU：STM32F429IGT6，主频 180MHz，2048KB FLASH ，256KB RAM
+- 外部 RAM：MT48LC4M32B2（SDRAM，16MB，32bit）
+- 外部 FLASH：W25Q64BVSSIG（SPI，8MB）、HY27UF081G2A（NAND，128MB）
+- LED：4个，扩展IO LED1 - LED4
+pkg_type: Board_Support_Packages
+pkg_vendor: RealThread
+pkg_version: 1.0.0
+template_projects:
+- builtin_files:
+  - files_and_folders:
+    - .config
+    - .cproject
+    - .gitignore
+    - .project
+    - .settings
+    - applications
+    - board
+    - cconfig.h
+    - figures
+    - Kconfig
+    - libraries
+    - lo
+    - makefile.targets
+    - project.ewd
+    - project.ewp
+    - project.eww
+    - project.uvopt
+    - project.uvoptx
+    - project.uvproj
+    - project.uvprojx
+    - README.md
+    - rtconfig.h
+    - rtconfig.py
+    - rtconfig_preinc.h
+    - SConscript
+    - SConstruct
+    - sd
+    - template.ewp
+    - template.eww
+    - template.uvopt
+    - template.uvoptx
+    - template.uvproj
+    - template.uvprojx
+    source_path_offset: project_0
+    target_path_offset: ''
+  external_files:
+  - files_and_folders:
+    - components
+    - include
+    - libcpu/arm
+    - libcpu/Kconfig
+    - libcpu/SConscript
+    - src
+    - tools
+    - Kconfig
+    - LICENSE
+    package_name: RT-Thread
+    package_type: RT-Thread_Source_Code
+    package_vendor: ''
+    package_version: latest
+    source_path_offset: rt-thread
+    target_path_offset: rt-thread
+  project_description: ''
+  project_name: Armfly
+  project_type: rt-thread|@full|@latest
+yaml_version: 3
